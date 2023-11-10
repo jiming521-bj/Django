@@ -4,9 +4,12 @@
 # @File     : newUrls.py
 # @SoftWare : PyCharm
 from django.urls import path
-from .views import index
+from .views import index, newList, newListTemplate
 
 # 配置路由规则
 urlpatterns = [
-    path('index', index)
+    path('index/', index),
+    # 新闻列表
+    path('newList/', newList),
+    path('newList1/', newListTemplate),
 ]
